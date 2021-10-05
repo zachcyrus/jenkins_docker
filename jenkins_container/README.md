@@ -1,7 +1,13 @@
 # Installing Jenkins on a Container
 
+## Steps to replicate
 
-❯ sudo docker exec jenkins-blueocean cat /var/jenkins_home/secrets/initialAdminPassword
+1. Follow this [tutorial](https://www.jenkins.io/doc/tutorials/create-a-pipeline-in-blue-ocean/)
+
+2. Once you're at the jenkins setup use the following command to find the initial admin password for jenkins setup.
+```
+sudo docker exec jenkins-blueocean cat /var/jenkins_home/secrets/initialAdminPassword
+```
 
 ## Troubleshooting 
 If you're using an M1 Mac remember to change the architecture of the debian system. 
